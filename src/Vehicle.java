@@ -3,12 +3,14 @@ public class Vehicle
   private String licensePlate;
   private double tollFee;
   private int passengers;
+  private int totalMiles;
   
-  public Vehicle(String licensePlate, double tollFee, int passengers)
+  public Vehicle(String licensePlate, double tollFee, int passengers, int totalMiles)
   {
     this.licensePlate = licensePlate;
     this.tollFee = tollFee;
     this.passengers = passengers;
+    this.totalMiles = totalMiles;
   }
 
   public String getLicensePlate()
@@ -45,5 +47,9 @@ public class Vehicle
     System.out.println("License Plate: " + licensePlate);
     System.out.println("Toll Fee: " + tollFee);
     System.out.println("Passengers: " + passengers);
+  }
+
+  public void printMiles() {
+    System.out.println("A total of " + totalMiles + " has been traversed");
   }
 }
